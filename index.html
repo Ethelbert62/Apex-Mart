@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Mart</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="Head">
+            <header>
+        <h1>Mini Mart</h1>
+        <p><marquee>Your everyday store</marquee></p>
+        <p>🛒: <span id="cart-count">0</span></p>
+        </div>
+    </header>
+    <section class="cart">
+        <h2>Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: #<span id="total-price">0</span></p>
+    </section>
+
+    <section class="products">
+        <h2>Our Products</h2>
+        <div class="product">
+            <h3>Rice</h3>
+            <p>#50,000</p>
+            <button onclick="addToCart('Rice', 50000)">Add to Cart</button>
+            <button onclick="clearCart()">Clear Cart</button>
+        </div>
+        <div class="product">
+            <h3>Bread</h3>
+            <p>#1000</p>
+            <button onclick="addToCart('Bread', 1000)">Add to Cart</button>
+            <button onclick="clearCart()">Clear Cart</button>
+        </div>
+        <div class="product">
+            <h3>Indomie</h3>
+            <p>#1500</p> 
+            <button onclick="addToCart('Indomie', 1500)">Add to Cart</button>
+            <button onclick="clearCart()">Clear Cart</button>
+        </div>
+        <div class="product">
+            <h3>Milk</h3>
+            <p>#850</p>
+            <button onclick="addToCart('Milk', 850)">Add to Cart</button>
+            <button onclick="clearCart()">Clear Cart</button>
+        </div>
+        <div class="product">
+            <h3>Eggs</h3>
+            <p>#350</p>
+            <button onclick="addToCart('Eggs', 350)">Add to Cart</button>
+            <button onclick="clearCart()">Clear Cart</button>
+        </div>
+        <div class="product">
+            <h3>Drinks</h3>
+            <p>#700 - #2000</p>
+            <button onclick="addToCart('Drinks', 700)">Add to Cart</button>
+            <button onclick="clearCart()">Clear Cart</button>
+        </div>
+    </section>
+
+   <section class="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+        <p><strong>☎ Phone:</strong>08137275795</p>
+        <p><strong>📍 Location:</strong>Uwani, Enugu</p>
+        <p><strong>📩 Email:</strong>minimart@gmail.com</p>
+    </div>
+
+    <div class="contact-action">
+        <a href="https://wa.me/2348137275795" target="_blank">
+            <button>Chat on WhatsApp</button>
+        </a>
+    </div>
+    <div class="contact-form">
+        <input type="text" placeholder="Your Name">
+        <input type="text" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+        <button>Send Message</button>
+    </div>
+   </section>
+    <script src="script.js"></script>
+    </div>
+</body>
+</html>
