@@ -32,7 +32,8 @@ function displayCart(){
 
     if (cart.length === 0) {
         cartitems.innerHTML= "<p>Your cart is empty</p>";
-        totalPrice.textContent = "0";
+        totalPrice.textContent = 0;
+        updateCart();
         return;
     }
     
